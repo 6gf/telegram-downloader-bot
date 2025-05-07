@@ -1,9 +1,11 @@
 import logging
+import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import yt_dlp
 
-TOKEN = "توكن البوت حقك هنا"
+# هنا نقرأ التوكن من متغير البيئة
+TOKEN = os.getenv("TOKEN")
 
 logging.basicConfig(level=logging.INFO)
 
