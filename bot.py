@@ -1,11 +1,10 @@
 import logging
-import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import yt_dlp
 
-# هنا نقرأ التوكن من متغير البيئة
-TOKEN = os.getenv("TOKEN")
+# هنا نحط التوكن مباشرة
+TOKEN = "8036634468:AAGaKIXtJQDWgbklx7Bhll56Z3EDkd380WY"
 
 logging.basicConfig(level=logging.INFO)
 
